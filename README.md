@@ -5,3 +5,5 @@ An e-commerce website where people can register, login and do basic CRUD operati
 cd to mysite and run "python manage.py runserver" to access the website
 
 link to website "http://127.0.0.1:8000/food/".
+
+Tech stack: Python, Django, Sqlite3, HTML
