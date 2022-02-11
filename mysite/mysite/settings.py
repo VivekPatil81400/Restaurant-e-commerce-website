@@ -126,3 +126,4 @@ LOGIN_REDIRECT_URL = 'food:index'
 LOGIN_URL = 'login'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Profiles')
 MEDIA_URL = '/pictures/'
+LOGOUT_REDIRECT_URL = 'login'

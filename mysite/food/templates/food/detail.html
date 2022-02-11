@@ -10,7 +10,10 @@
             <h1>{{ item.Item_name }}<h1>
             <h2>{{ item.Item_desc }}</h2>
             <h3>£{{ item.Item_price }}</h3>
-                <a href="{% url 'food:delete_item' item.id %}">Delete</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'food:delete_item' item.id %}" class="btn btn-success">Delete</a>
+                <a href="{% url 'food:update_item' item.id %}" class="btn btn-success">Update</a>
+            {% endif %}
         </div>
     </div>
 </div>

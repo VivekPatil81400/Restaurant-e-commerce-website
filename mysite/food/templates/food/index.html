@@ -24,14 +24,13 @@
 </div>
 
 {% endfor %}
+{% if user.is_authenticated %}
+    <h1>ENJOY THE WEBSITE</h1>
+{% else %}
+    <h1>LOGIN TO ADD,DELETE AND UPDATE THE ITEM</h1>
+{% endif %}
 {% endblock %}
 
-this is the old code
-  <ul>
-      <li>
-          <a href=""> {{ item.id }} -- {{ item.Item_name }} </a>
-      </li>
-  </ul>
 
 </body>
 </html>
